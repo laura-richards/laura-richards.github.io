@@ -1,20 +1,18 @@
 body {
-  background-color: cadetblue;
+  background-color: rgb(113, 188, 190);
   text-align: center;
+  overflow: auto;
 }
 
 nav {
   width: 100%;
   margin: 0;
+  position:fixed top;
 }
 
 
 li {
-  background-color: beige;
   list-style-type: none;
-  display:inline-block;
-  padding: 3px;
-  border-radius: 4px;
   }
 
 img {
@@ -22,6 +20,21 @@ border-radius: 100px;
 height: 200px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.nav {
+  background-color: beige;
+  display:inline-block;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.active {
+  background-color: black;
+  color: beige;
+}
 
 .blogs {
   width: 20em;
@@ -29,14 +42,16 @@ height: 200px;
   background-color: wheat;
   border-radius: 5px;
   margin: 5px;
+  display:inline-flexbox;
   }
 
-.active {
-  background-color: black;
-  color: beige;
+section {
+  text-align: left;
+  border-bottom: solid 3px black;
 }
 
 footer {
   position: fixed;
 
 }
+
