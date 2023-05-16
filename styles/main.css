@@ -10,6 +10,18 @@ nav {
   margin: 0;
   }
 
+h1 {
+  font-size: 4dvw;
+}
+
+h3 {
+  font-size: 3dvw;
+}
+
+p {
+  font-size: 2dvw;
+}
+
 .flexNav {
   display: inline-flex;
   flex-direction: row;
@@ -20,7 +32,7 @@ nav {
 
 img {
 border-radius: 100px;
-width: 25%;
+width: 20%;
 height: auto;
 }
 
@@ -32,6 +44,7 @@ a {
   background-color: beige;
   padding: 3px;
   border-radius: 4px;
+  font-size: 2dvw;
 }
 
 .active {
