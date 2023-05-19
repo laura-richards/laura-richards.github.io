@@ -101,6 +101,13 @@ section {
   padding: 1rem;
 }
 
+.smallbox {
+  background-color: rgb(128, 188, 190);
+  border: solid 1px grey; 
+  padding: 2vmin; 
+  margin: 2vw;
+}
+
 .elements {
   outline: solid 1px darkgray;
   background-color: lightgrey;
@@ -137,5 +144,9 @@ section {
 
   .bottom {
     align-self: center;
+  }
+
+  .smallblogbox {
+  width: 25%;
   }
 }
