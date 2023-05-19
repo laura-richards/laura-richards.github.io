@@ -26,12 +26,20 @@ a {
   background-color: beige;
   padding: 3px;
   border-radius: 4px;
-  font-size: 2dvw;
+  font-size: 2.5vmin;
 }
 
 .active {
   background-color: black;
   color: beige;
+}
+
+h1 {
+ font-size: 6vmin;
+}
+
+h3 {
+  font-size: 3vmin;
 }
 
 .profileImage {
@@ -43,6 +51,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  margin:
 }
 
 ul {
@@ -82,19 +91,14 @@ section {
 
 .blogbase {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 2dvw;
+  flex-direction: column;
+  margin: 2vw;
 }
 
 .blogbox {
   border: solid 1px black;
   background-color: rgb(183, 218, 219);
   padding: 1rem;
-}
-
-.bottom {
-  align-self: flex-end;
 }
 
 .elements {
@@ -115,4 +119,23 @@ section {
   height: 20px;
   margin: 20px;
   padding: 5px;
+}
+
+@media screen and (min-width: 840px) {
+  .blogbase {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .blogbox {
+    max-width: 40%;
+    min-width: 20%;
+  }
+
+  .bottom {
+    align-self: center;
+  }
 }
