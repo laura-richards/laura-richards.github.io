@@ -90,6 +90,7 @@ section {
 .blogbox {
   border: solid 1px black;
   background-color: rgb(183, 218, 219);
+  padding: 1rem;
 }
 
 .bottom {
