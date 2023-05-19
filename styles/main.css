@@ -10,18 +10,6 @@ nav {
   margin: 0;
 }
 
-/* h1 {
-  font-size: 6vw;
-}
-
-h3 {
-  font-size: 4vw;
-}
-
-p {
-  font-size: 3vw;
-} */
-
 .flexNav {
   display: inline-flex;
   flex-direction: row;
@@ -54,7 +42,9 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
 }
+
 ul {
   padding: 0;
 }
@@ -88,4 +78,40 @@ section {
   text-align: left;
   padding: 3rem;
   margin: 4rem;
+}
+
+.blogbase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2dvw;
+}
+
+.blogbox {
+  border: solid 1px black;
+  background-color: rgb(183, 218, 219);
+}
+
+.bottom {
+  align-self: flex-end;
+}
+
+.elements {
+  outline: solid 1px darkgray;
+  background-color: lightgrey;
+}
+
+.inlineExample {
+  outline: solid 1px red;
+  height: 100px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.inlineBlockExample {
+  display: inline-block;
+  outline: solid 1px blueviolet;
+  height: 20px;
+  margin: 20px;
+  padding: 5px;
 }
