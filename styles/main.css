@@ -51,7 +51,6 @@ h3 {
 img {
   max-width: 100%;
   height: auto;
-  margin:
 }
 
 ul {
@@ -85,8 +84,8 @@ section {
   border: solid 1px black;
   background-color: antiquewhite;
   text-align: left;
-  padding: 3rem;
-  margin: 4rem;
+  padding: 3vw;
+  margin: 4vw;
 }
 
 .blogbase {
@@ -148,5 +147,19 @@ section {
 
   .smallblogbox {
   width: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  h3 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw; 
   }
 }
