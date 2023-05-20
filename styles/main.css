@@ -137,6 +137,13 @@ section {
   padding: 5px;
 }
 
+footer {
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+align-items: center;
+}
+
 @media screen and (min-width: 840px) {
   .blogbase {
     display: flex;
