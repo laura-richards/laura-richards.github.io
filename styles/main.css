@@ -3,6 +3,7 @@ body {
   text-align: center;
   overflow: auto;
   font-family: 'Rubik', sans-serif;
+  margin: 0;
 }
 
 nav {
@@ -15,7 +16,13 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  padding: 0;
+  padding: 3px;
+  background-color: beige;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 a {
@@ -36,6 +43,7 @@ a {
 
 h1 {
  font-size: 6vmin;
+ padding: 4vmin;
 }
 
 h3 {
@@ -61,6 +69,7 @@ li {
   list-style-type: none;
 }
 
+
 .blogList {
   padding: 1em;
   font-size: 1em;
@@ -78,6 +87,7 @@ li {
 section {
   text-align: left;
   border-bottom: solid 3px black;
+  padding: 0 3vw 0 3vw;
 }
 
 #testimonial {
