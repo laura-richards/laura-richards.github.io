@@ -1,9 +1,9 @@
 body {
   background-color: rgb(113, 188, 190);
-  text-align: center;
+  text-align: left;
   overflow: auto;
   font-family: 'Rubik', sans-serif;
-  margin: 0;
+  margin: 0 3vw;
 }
 
 nav {
@@ -69,6 +69,10 @@ li {
   list-style-type: none;
 }
 
+.textBlocks {
+  max-width: 800px;
+
+}
 
 .blogList {
   padding: 1em;
@@ -142,9 +146,20 @@ display: flex;
 justify-content: space-evenly;
 flex-direction: row;
 align-items: center;
+/* padding: 2vw;
+margin:0;
+position:static;
+bottom: 0; */
+
 }
 
+
 @media screen and (min-width: 840px) {
+
+  main {
+    margin-left: 10%;
+  }
+  
   .blogbase {
     display: flex;
     flex-direction: row;
