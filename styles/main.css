@@ -141,6 +141,14 @@ section {
   padding: 5px;
 }
 
+.code-image {
+  min-width: 570px;
+}
+
+.bullet-points {
+  list-style-type: circle;
+  }
+
 footer {
 display: flex;
 justify-content: space-evenly;
