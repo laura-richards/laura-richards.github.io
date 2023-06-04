@@ -29,7 +29,7 @@
 // Create an array of snacks
 let ourSnacks = ['chips', 'apples', 'chocolate', 'pea snaps']
 //Retrieve the 3rd item in the array
-console.log(ourSnack[2]) // in the console you would see 'chocolate'
+// console.log(ourSnack[2]) // in the console you would see 'chocolate'
 
 //--OBJECT--//
 // Create an Object party with a date and time
@@ -37,8 +37,8 @@ let party = {
   time: '2pm',
   date: '20th June',
 }
-//retrieve the time value
-console.log(party.time)
+// //retrieve the time value
+// console.log(party.time)
 
 // //--FUNCTIONS--//
 // // //Functions structure
