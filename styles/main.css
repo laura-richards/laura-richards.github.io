@@ -147,6 +147,7 @@ section {
 
 .bullet-points {
   list-style-type: circle;
+  margin: 0 4vw;
   }
 
 footer {
