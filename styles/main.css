@@ -88,6 +88,10 @@ li {
   justify-content: space-evenly;
   }
 
+.blog-description {
+ justify-content: center;
+ margin: 0;
+}
 section {
   text-align: left;
   border-bottom: solid 3px black;
