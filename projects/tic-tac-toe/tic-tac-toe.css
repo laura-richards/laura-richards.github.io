@@ -36,3 +36,15 @@ h2 {
   font-size: 2vw;
   color: #4c2c92;
 }  
+
+.flexNav {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
