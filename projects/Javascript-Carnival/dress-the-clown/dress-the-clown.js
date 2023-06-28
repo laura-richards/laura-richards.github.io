@@ -59,10 +59,15 @@ window.addEventListener('keydown', (event) => {
 })
 
 // Save Function
-let clown = {
-  head: clownParts[0],
-  body: clownParts[1],
-  shoes: clownParts[2],
+function saveFunction() {
+  let clown = {
+    head: clownParts[0],
+    body: clownParts[1],
+    shoes: clownParts[2],
+  }
+  save(clown)
 }
-console.log(clown)
-save(clown)
+
+// Add Save Function to the Save button
+let saveButton = document.getElementById('save-button')
+saveButton.addEventListener('click', saveFunction)
