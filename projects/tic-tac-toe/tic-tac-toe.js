@@ -6,6 +6,11 @@ let subtitle = document.getElementById('subtitle')
 let gameIsOver
 let stalemate
 let button = document.getElementById('restart')
+let totalsdisplay = document.getElementById('totals')
+let totals = {
+  X: 0,
+  O: 0,
+}
 
 for (let i = 0; i < cells.length; i++) {
   onclick = cellClicked
@@ -20,7 +25,7 @@ function whoStarts() {
 // function for handling clicks on cells
 function cellClicked(e) {
   let cell = e.target
-  let symbol = noughtsTurn === true ? '0' : 'X'
+  let symbol = noughtsTurn === true ? 'O' : 'X'
   if (cell.innerHTML === '') {
     cell.innerHTML = symbol
     checkForStalemate(cells)
@@ -32,6 +37,8 @@ function cellClicked(e) {
       button.textContent = `Play Again?`
     } else if (gameIsOver) {
       endGame(symbol)
+      addWin(symbol)
+      displaytotals(totals)
     }
   }
 }
@@ -94,7 +101,7 @@ function checkForWin(symbol) {
 // function for next turn
 function nextPlayersTurn(symbol) {
   noughtsTurn = !noughtsTurn
-  symbol = noughtsTurn === true ? '0' : 'X'
+  symbol = noughtsTurn === true ? 'O' : 'X'
   subtitle.textContent = `It is now ${symbol}'s turn`
 }
 
@@ -132,4 +139,21 @@ function restartGame() {
   }
   gameIsOver = false
   stalemate = false
+}
+
+//Function to Update win totals
+function addWin(symbol) {
+  totals[symbol]++
+}
+
+//Function to display the totals
+function displaytotals(totals) {
+  totalsdisplay.textContent = `Wins X: ${totals.X} O: ${totals.O}`
+}
+
+//Function to reset the totals
+function resetTotals() {
+  totals.O = 0
+  totals.X = 0
+  displaytotals(totals)
 }
