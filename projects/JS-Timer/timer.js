@@ -5,7 +5,6 @@ let startTiming = document.getElementById('start-time')
 let timerLength = 20
 let timePassed = 0
 let timeLeft = timerLength
-let timerInterval = null
 
 // button set up
 startTiming.addEventListener('click', () => {
@@ -17,6 +16,29 @@ const COLOR_CODES = {
   info: {
     color: 'green',
   },
+  warning: {
+    color: 'orange',
+    threshold: 0.5,
+  },
+  alert: {
+    color: 'red',
+    threshold: 0.25,
+  },
+}
+
+// Function to change colors at the time reduces
+function changeColors() {
+  const timeLeftRatio = timeLeft / timerLength
+  if (
+    timeLeftRatio <= COLOR_CODES.warning.threshold &&
+    timeLeftRatio > COLOR_CODES.alert.threshold
+  ) {
+    secondCircle.classList.remove(COLOR_CODES.info.color)
+    secondCircle.classList.add(COLOR_CODES.warning.color)
+  } else if (timeLeftRatio <= COLOR_CODES.alert.threshold) {
+    secondCircle.classList.remove(COLOR_CODES.warning.color)
+    secondCircle.classList.add(COLOR_CODES.alert.color)
+  }
 }
 
 let remainingPathColor = COLOR_CODES.info.color
@@ -41,12 +63,14 @@ function startTimer() {
     timePassed++
     timeLeft = timerLength - timePassed
     remainingTime.innerHTML = `${formatTimeLeft(timeLeft)}`
+    changeColors()
     setCircleDasharray()
 
     if (timeLeft == -1) {
       clearInterval(timerInterval)
-
       timeIsUp()
+      secondCircle.classList.remove(COLOR_CODES.alert.color)
+      secondCircle.classList.add(COLOR_CODES.info.color)
     }
   }, 1000)
 }
