@@ -1,0 +1,105 @@
+body {
+  align-items: center;
+  text-align: left;
+  overflow: auto;
+  font-family: 'Rubik', sans-serif;
+  margin: 0 3vw;
+  background-color: rgb(236, 236, 236);
+}
+.flexNav {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 2v
+}
+
+#start-time {
+font-size: 3vmin;
+}
+
+.timer {
+ margin: 10% 15%
+}
+
+/* Sets the containers height and width */
+.base-timer {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  height: 300px;
+  width: 300px;
+}
+
+/* Removes SVG styling that would hide the time label */
+.base-timer_circle {
+  fill: none;
+  stroke: none;
+}
+
+/* The SVG path that displays the timer's progress */
+.base-timer_path-elapsed {
+  stroke-width: 7px;
+  stroke: grey;
+  
+}
+
+.base-timer_label {
+  position: absolute;
+  
+  /* Size should match the parent container */
+  width: 300px;
+  height: 300px;
+  
+  /* Keep the label aligned to the top */
+  top: 0;
+  
+  /* Create a flexible box that centers content vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Sort of an arbitrary number; adjust to your liking */
+  font-size: 48px;
+}
+
+.base-timer_path-remaining {
+  /* Just as thick as the original ring */
+  stroke-width: 7px;
+
+  /* Rounds the line endings to create a seamless circle */
+  stroke-linecap: round;
+
+  /* Makes sure the animation starts at the top of the circle */
+  transform: rotate(90deg);
+  transform-origin: center;
+
+  /* One second aligns with the speed of the countdown timer */
+  transition: 1s linear all;
+
+  /* Allows the ring to change color when the color value updates */
+  stroke: currentColor;
+ }
+
+.base-timer_svg {
+  /* Flips the svg and makes the animation to move left-to-right */
+  transform: scaleX(-1);
+}
+
+.green {
+  color: green
+}
+
+.orange {
+  color: orange
+}
+
+.red {
+  color: red
+}
+
