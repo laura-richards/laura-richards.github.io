@@ -42,8 +42,8 @@ a {
 }
 
 h1 {
- font-size: 6vmin;
- padding: 4vmin;
+  font-size: 6vmin;
+  padding: 4vmin;
 }
 
 h3 {
@@ -71,7 +71,6 @@ li {
 
 .textBlocks {
   max-width: 800px;
-
 }
 
 .blogList {
@@ -86,12 +85,14 @@ li {
   margin: 1rem;
   display: inline-flex;
   justify-content: space-evenly;
-  }
+}
 
 .blog-description {
- justify-content: center;
- margin: 0;
+  justify-content: center;
+  margin: 0;
+  max-width: 400px;
 }
+
 section {
   text-align: left;
   border-bottom: solid 3px black;
@@ -104,6 +105,7 @@ section {
   text-align: left;
   padding: 3vw;
   margin: 4vw;
+ 
 }
 
 .blogbase {
@@ -120,8 +122,8 @@ section {
 
 .smallbox {
   background-color: rgb(128, 188, 190);
-  border: solid 1px grey; 
-  padding: 2vmin; 
+  border: solid 1px grey;
+  padding: 2vmin;
   margin: 2vw;
 }
 
@@ -152,13 +154,12 @@ section {
 .bullet-points {
   list-style-type: circle;
   margin: 0 4vw;
-  }
+}
 
 .twtw-grid {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
-
 }
 
 .twtw {
@@ -191,24 +192,21 @@ section {
 }
 
 footer {
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
-align-items: center;
-/* padding: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 2vw;
 margin:0;
 position:static;
 bottom: 0; */
-
 }
 
-
 @media screen and (min-width: 840px) {
-
   main {
     margin-left: 10%;
   }
-  
+
   .blogbase {
     display: flex;
     flex-direction: row;
@@ -227,7 +225,7 @@ bottom: 0; */
   }
 
   .smallblogbox {
-  width: 25%;
+    width: 25%;
   }
 }
 
@@ -241,6 +239,6 @@ bottom: 0; */
   }
 
   p {
-    font-size: 4vw; 
+    font-size: 4vw;
   }
 }
